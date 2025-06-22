@@ -1,15 +1,17 @@
-import React from 'react';
 import { Link } from 'react-router';
+import './styles.css';
 
 const NavBar = () => {
   return (
     <div
-      style={{
-        position: 'absolute',
-        top: 100,
-        background: 'green',
-        zIndex: 100,
-      }}
+      style={
+        {
+          // position: 'absolute',
+          // top: 100,
+          // background: 'green',
+          // zIndex: 100,
+        }
+      }
     >
       <Link to={'/'}>Home</Link>
       <Link to={'/destination'}>Destination</Link>

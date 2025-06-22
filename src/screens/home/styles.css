@@ -1,1 +1,41 @@
 @import './../../common.css';
+
+.main_container {
+  background-image: url('./../../assets/images/home/background-home-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-end; */
+}
+
+.description_container {
+  display: flex;
+  /* flex-direction: row;
+  margin-left: 11%;
+  margin-right: 11%;
+  margin-bottom: 12.5%; */
+  background-color: red;
+}
+
+/* .description {
+  display: flex;
+  flex-direction: column;
+} */
+
+.explore_button {
+  background-color: aliceblue;
+}
+
+@media (min-width: 768px) {
+  .main_container {
+    background-image: url('./../../assets/images/home/background-home-tablet.jpg');
+  }
+}
+@media (min-width: 1440px) {
+  .main_container {
+    background-image: url('./../../assets/images/home/background-home-desktop.png');
+  }
+}

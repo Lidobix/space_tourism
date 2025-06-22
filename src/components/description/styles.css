@@ -1,0 +1,11 @@
+.introduction {
+  /* font-size: 1rem; */
+}
+
+.title {
+  font-size: 80px;
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1440px) {
+}
