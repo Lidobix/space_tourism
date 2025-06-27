@@ -4,14 +4,10 @@ import HomeScreen from './screens/home';
 import DestinationScreen from './screens/destination';
 import CrewScreen from './screens/crew';
 import TechnologyScreen from './screens/technology';
-import Header from '@components/header';
-
-// import Header from './components/header';
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Header />
       <Routes>
         <Route path="/" element={<HomeScreen />}></Route>
         <Route path="/crew" element={<CrewScreen />}></Route>

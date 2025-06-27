@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import '@fontsource/bellefair';
+import '@fontsource/barlow-condensed';
+import '@fontsource/barlow';
 import App from './App';
 
 const root = ReactDOM.createRoot(

@@ -1,29 +1,17 @@
 import './styles.css';
 
-type IntroductionProps = { content: string; size?: number };
-type TitleProps = { title: string; size?: number };
-type DescriptionProps = { content: string; size?: number };
+type IntroductionProps = { content: string };
+type TitleProps = { title: string };
+type DescriptionProps = { content: string };
 
-export const Introduction = ({ content, size }: IntroductionProps) => {
-  return (
-    <span style={{ fontSize: `${size}rem` }} className="introduction">
-      {content}
-    </span>
-  );
+export const Introduction = ({ content }: IntroductionProps) => {
+  return <span className="text5">{content}</span>;
 };
 
-export const Title = ({ title, size }: TitleProps) => {
-  return (
-    <span style={{ fontSize: `${size}rem` }} className="title">
-      {title}
-    </span>
-  );
+export const Title = ({ title }: TitleProps) => {
+  return <span className="text1">{title}</span>;
 };
 
-export const Description = ({ content, size }: DescriptionProps) => {
-  return (
-    <span style={{ fontSize: `${size}rem` }} className="description">
-      {content}
-    </span>
-  );
+export const Description = ({ content }: DescriptionProps) => {
+  return <span className="text9">{content}</span>;
 };
