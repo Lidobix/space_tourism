@@ -6,6 +6,16 @@
   line-height: 171.9%;
 }
 
+.text4 {
+  color: #d0d6f9;
+  text-align: center;
+  font-size: 3.94vh;
+  font-family: 'Bellefair', sans-serif;
+  line-height: 36.7%;
+  letter-spacing: 4px;
+  /* font-weight: 400; */
+}
+
 .text5 {
   color: #d0d6f9;
   text-align: center;
