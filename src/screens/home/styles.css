@@ -24,12 +24,13 @@
   width: 36vw;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
-  border: 13vh solid transparent;
+  border: 10vh solid transparent;
   transition: border-color 0.5s ease;
   -webkit-transition: border-color 0.5s ease;
   -moz-transition: border-color 0.5s ease;
   -ms-transition: border-color 0.5s ease;
   -o-transition: border-color 0.5s ease;
+  margin-top: 4vh;
 }
 
 .explore_button_wrapper:hover {
