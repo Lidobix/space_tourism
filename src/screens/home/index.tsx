@@ -43,7 +43,7 @@ const HomeScreen = () => {
 
         <div className="explore_button_wrapper">
           <div className="explore_button">
-            <span className="explore_text text4">EXPLORE</span>
+            <span className="explore_text text12">EXPLORE</span>
           </div>
         </div>
       </div>
