@@ -1,3 +1,57 @@
+.nav_container {
+  position: absolute;
+
+  /* background-color: transparent; */
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 10;
+  padding-left: 3.94vh;
+  width: 67.73vw;
+  -webkit-backdrop-filter: blur(80px);
+  backdrop-filter: blur(80px);
+}
+
+.close_icon {
+  /* width: 3.26vw;
+  height: 2.59vh; */
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  height: 2.58vh;
+  width: 6.4vw;
+}
+
+.nav_list {
+  /* display: flex;
+  flex-direction: column; */
+  list-style: none;
+  counter-reset: my-counter -1;
+  padding-left: 2em;
+  margin-top: 6.91vh;
+}
+
+.nav_list li {
+  counter-increment: my-counter;
+  position: relative;
+  margin-bottom: 0.5em;
+  padding-top: 3.94vh;
+}
+
+.nav_list li::before {
+  content: counter(my-counter, decimal-leading-zero);
+  position: absolute;
+  left: -2em;
+  width: 2em;
+  text-align: left;
+  font-weight: bold;
+}
+
+.link {
+  /* color: white; */
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
 @media (min-width: 768px) {
   .main_container {
     /* background-image: url('./../../assets/images/home/background-home-tablet.jpg'); */

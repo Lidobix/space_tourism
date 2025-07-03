@@ -30,6 +30,15 @@ body {
   font-weight: 400;
 }
 
+.text8 {
+  color: white;
+  text-align: left;
+  font-family: 'Barlow Condensed';
+  line-height: 19.2%;
+  font-size: 1.97vh;
+  letter-spacing: 4px;
+}
+
 .text9 {
   color: var(--blue300);
   text-align: center;
