@@ -7,16 +7,16 @@
   height: 100%;
   z-index: 10;
   padding-left: 3.94vh;
-  width: 67.73vw;
-  -webkit-backdrop-filter: blur(80px);
+  padding-right: 3vh;
   backdrop-filter: blur(80px);
+  /* padding: 3vh 6.4vw 3vh 6.4vw; */
 }
 
 .close_icon {
   /* width: 3.26vw;
   height: 2.59vh; */
   padding-top: 3vh;
-  padding-bottom: 3vh;
+  /* padding-bottom: 3vh; */
   height: 2.58vh;
   width: 6.4vw;
 }
@@ -48,7 +48,7 @@
 
 .link {
   /* color: white; */
-  -webkit-text-decoration: none;
+  /* -webkit-text-decoration: none; */
   text-decoration: none;
 }
 

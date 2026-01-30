@@ -4,16 +4,19 @@ import HomeScreen from './screens/home';
 import DestinationScreen from './screens/destination';
 import CrewScreen from './screens/crew';
 import TechnologyScreen from './screens/technology';
+import { NavProvider } from '@contexts/navigationContext';
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomeScreen />}></Route>
-        <Route path="/crew" element={<CrewScreen />}></Route>
-        <Route path="/destination" element={<DestinationScreen />}></Route>
-        <Route path="/technology" element={<TechnologyScreen />}></Route>
-      </Routes>
+      <NavProvider>
+        <Routes>
+          <Route path="/" element={<HomeScreen />}></Route>
+          <Route path="/crew" element={<CrewScreen />}></Route>
+          <Route path="/destination" element={<DestinationScreen />}></Route>
+          <Route path="/technology" element={<TechnologyScreen />}></Route>
+        </Routes>
+      </NavProvider>
     </BrowserRouter>
   );
 };

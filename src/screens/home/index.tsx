@@ -2,10 +2,13 @@ import React, { useRef } from 'react';
 import './styles.css';
 import { Title, Introduction, Description } from '../../components/description';
 import Header from '@components/header';
+import { useNav } from '@contexts/navigationContext';
 // import { changeClass, ChangeClassValue } from '@utils/index';
 
 const HomeScreen = () => {
   const box = useRef<HTMLDivElement>(null);
+
+  const { closeNav, toggleNav } = useNav();
 
   const toggleBox = () => {
     if (box && box.current !== null) {
@@ -26,10 +29,19 @@ const HomeScreen = () => {
     }
   };
 
+  const handleClick = (e) => {
+    if (e !== 'img.burger_icon') {
+      closeNav();
+    } else {
+      toggleNav();
+    }
+    // console.log(e);
+  };
+
   return (
     <div className="main_container">
       <Header />
-      <div className="description_container">
+      <div className="description_container" onClick={handleClick}>
         <Introduction content="SO, YOU WANT TO TRAVEL TO"></Introduction>
 
         <Title title="SPACE"></Title>
